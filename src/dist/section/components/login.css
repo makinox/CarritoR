@@ -1,0 +1,50 @@
+.section-container-login {
+  display: grid;
+  grid-template-columns: minmax(auto, 500px);
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.section-container-login-card {
+  border: 1px black solid;
+  display: grid;
+  grid-template-columns: 300px;
+  justify-content: center;
+  padding: 60px 0;
+}
+
+.section-container-login-card-body form div label {
+  display: block;
+  padding: 10px 0;
+}
+
+.section-container-login-card-body form div input {
+  border: none;
+  border-bottom: 1px #cacaca solid;
+  padding: 5px 0;
+}
+
+.section-container-login-card-body form div input:active {
+  border: none;
+}
+
+.section-container-login-card-body form div button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border: 1px #022ED8 solid;
+  padding: 10px 45px;
+  background-color: #022ED8;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, .3);
+  margin: 10px 0;
+}
+
+.section-container-login-card-body form div button:hover {
+  background-color: #170AFF;
+}
+
+.section-container-login-card-body form div button:active {
+  background-color: #0A6BE8;
+  box-shadow: 3px 3px 10px 0px rgba(2, 46, 214, .3);
+}

@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Login from '../section/container/login'
+import Login from '../section/components/login'
 
 export default (props) => (
     <Router>
