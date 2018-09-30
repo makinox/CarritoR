@@ -1,0 +1,56 @@
+[
+  {
+    "_id": "5bb03777976a3833f1240f0e",
+    "index": 0,
+    "picture": "http://placehold.it/32x32",
+    "username": "Franklin",
+    "password": "pan",
+    "company": "ANOCHA",
+    "phone": "+1 (972) 452-3479"
+  },
+  {
+    "_id": "5bb03777fa75f46208845faf",
+    "index": 1,
+    "picture": "http://placehold.it/32x32",
+    "username": "Aline",
+    "password": "pan",
+    "company": "TERSANKI",
+    "phone": "+1 (870) 597-2689"
+  },
+  {
+    "_id": "5bb037778fad194f608f0b1f",
+    "index": 2,
+    "picture": "http://placehold.it/32x32",
+    "username": "Christa",
+    "password": "pan",
+    "company": "KRAG",
+    "phone": "+1 (920) 546-2434"
+  },
+  {
+    "_id": "5bb03777e6baed6c76ffc43f",
+    "index": 3,
+    "picture": "http://placehold.it/32x32",
+    "username": "Wilma",
+    "password": "pan",
+    "company": "EARTHWAX",
+    "phone": "+1 (829) 432-3208"
+  },
+  {
+    "_id": "5bb03777cb49bf41ec9f386b",
+    "index": 4,
+    "picture": "http://placehold.it/32x32",
+    "username": "Clay",
+    "password": "pan",
+    "company": "RECRISYS",
+    "phone": "+1 (905) 473-3421"
+  },
+  {
+    "_id": "5bb03777dde3f9648e1d96d1",
+    "index": 5,
+    "picture": "http://placehold.it/32x32",
+    "username": "Margret",
+    "password": "pan",
+    "company": "MYOPIUM",
+    "phone": "+1 (855) 512-2082"
+  }
+]

@@ -1,7 +1,7 @@
 import React from 'react'
-import './login.css'
+import './loginLayout.css'
 
-export default () => (
+export default (props) => (
   <section className="section-container-login">
     <div className="section-container-login-card">
       <div className="section-container-login-card-header">
@@ -9,14 +9,14 @@ export default () => (
         <h3>Iniciar sesión</h3>
       </div>
       <div className="section-container-login-card-body">
-        <form >
+        <form onSubmit={props.submit} >
           <div>
             <label htmlFor="user" >Ingresa tu usuario</label>
-            <input type="text" />
+            <input type="text" name="user" />
           </div>
           <div>
             <label htmlFor="password">Ingresa tu contraseña</label>
-            <input type="password" />
+            <input type="password" name="password" />
           </div>
           <div>
             <button type="submit">Ingresar</button>

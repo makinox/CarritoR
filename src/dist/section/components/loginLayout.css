@@ -2,15 +2,15 @@
   display: grid;
   grid-template-columns: minmax(auto, 500px);
   justify-content: center;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .section-container-login-card {
-  border: 1px black solid;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   display: grid;
   grid-template-columns: 300px;
   justify-content: center;
-  padding: 60px 0;
+  padding: 60px 0 100px 0; 
 }
 
 .section-container-login-card-body form div label {
@@ -20,12 +20,11 @@
 
 .section-container-login-card-body form div input {
   border: none;
-  border-bottom: 1px #cacaca solid;
+  border: 1px #cacaca solid;
+  border-radius: 3px;
   padding: 5px 0;
-}
-
-.section-container-login-card-body form div input:active {
-  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  padding-left: 10px;
 }
 
 .section-container-login-card-body form div button {
