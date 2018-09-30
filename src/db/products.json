@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "5bb03aa932fdaa166fb75106",
+    "index": 0,
+    "product": "Castillo",
+    "stock": 5,
+    "company": "EGYPTO"
+  },
+  {
+    "_id": "5bb03aa989f309a88945f7f8",
+    "index": 1,
+    "product": "Lucas",
+    "stock": 3,
+    "company": "PROSELY"
+  },
+  {
+    "_id": "5bb03aa9495f4eb6906a14c3",
+    "index": 2,
+    "product": "Cross",
+    "stock": 5,
+    "company": "GEOFARM"
+  },
+  {
+    "_id": "5bb03aa9bc63f093b70aa630",
+    "index": 3,
+    "product": "Hart",
+    "stock": 2,
+    "company": "OTHERSIDE"
+  },
+  {
+    "_id": "5bb03aa99653fe31db9430cd",
+    "index": 4,
+    "product": "Goodman",
+    "stock": 5,
+    "company": "ARTIQ"
+  },
+  {
+    "_id": "5bb03aa9abd88ec25f05398b",
+    "index": 5,
+    "product": "Saunders",
+    "stock": 7,
+    "company": "TUBALUM"
+  },
+  {
+    "_id": "5bb03aa9ead746c61b6183c3",
+    "index": 6,
+    "product": "Horton",
+    "stock": 6,
+    "company": "CIPROMOX"
+  },
+  {
+    "_id": "5bb03aa90cbe0d8e8e089d28",
+    "index": 7,
+    "product": "Lamb",
+    "stock": 3,
+    "company": "EXOSPEED"
+  },
+  {
+    "_id": "5bb03aa991e4be9ea69a72d8",
+    "index": 8,
+    "product": "Rivas",
+    "stock": 6,
+    "company": "QUONK"
+  }
+]
