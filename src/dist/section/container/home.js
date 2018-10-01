@@ -8,11 +8,6 @@ import Home from '../components/homeComponent'
 
 class App extends React.Component {
 
-  state = {
-    counter: 0,
-    total: 0
-  }
-
   componentDidMount(){
     this.props.dispatch({
       type: 'SET_PRODUCTS',
@@ -27,7 +22,6 @@ class App extends React.Component {
     // eslint-disable-next-line
     let el = await this.props.products.filter((el) => el.index == className)[0]
     const duplicity = this.props.selected.some((aux) => el.index === aux.index)
-
     if (this.props.counter === 0) {
       this.props.dispatch({
         type: 'SET_SELECTED',
@@ -57,20 +51,26 @@ class App extends React.Component {
     this.props.dispatch({
       type: 'SET_SELECTED',
       payload: {
-        selected: await this.props.selected.filter((el) => el.index != className)
+        selected: await this.props.selected.filter((el) => el.index != className),
+        counter: 1
       }
     })
 
     await this.total()
   }
 
-  total = async () => {
+  total = async (changer) => {
     let total = 0
-    this.props.selected.map((el) => total += parseInt(el.cost, 10))
-    this.setState({total})
+    this.props.selected.map((el) => total += (parseInt(el.cost, 10)))
+    this.props.dispatch({
+      type: 'SET_TOTAL',
+      payload: {
+        total
+      }
+    })
   }
 
-  handleChange = (e) => {
+  handleChange = async (e) => {
     const {value, className} = e.target
     console.log(className)
     console.log(value)
@@ -80,7 +80,7 @@ class App extends React.Component {
     return (
       <Home>
         <ProductList products={this.props.products} click={this.handleClick} />
-        <Carrito selected={this.props.selected} delete={this.handleDelete} total={this.state.total} change={this.handleChange} proc={this.props.products} />
+        <Carrito selected={this.props.selected} delete={this.handleDelete} total={this.props.total} change={this.handleChange} />
       </Home>
     )
   }
@@ -90,7 +90,8 @@ function mapStateToProps(state){
   return{
     products: state.products,
     selected: state.selected,
-    counter: state.counter
+    counter: state.counter,
+    total: state.total
   }
 }
 

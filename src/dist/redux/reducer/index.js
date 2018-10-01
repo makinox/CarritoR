@@ -20,7 +20,14 @@ export default function reducef(state, action) {
       return {
         ...state,
         selected: action.payload.selected,
-        counter: action.payload.counter,
+        counter: action.payload.counter
+      }
+    }
+
+    case 'SET_TOTAL': {
+      return {
+        ...state,
+        total: action.payload.total,
       }
     }
 

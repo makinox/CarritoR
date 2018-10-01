@@ -13,12 +13,12 @@ export default (props) => (
         <div key={i}>
           <p>{el.product}</p>
 
-          <input className={el.index}
+          {/* <input className={el.index}
             type="number"
             defaultValue={1}
             onChange={props.change}
-            max={1}
-          />
+            max={el.stock}
+          /> */}
 
           <a ><span role="img" aria-label="Borrar" className={el.index} onClick={props.delete} >❌</span></a>
         </div>

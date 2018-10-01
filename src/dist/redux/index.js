@@ -11,7 +11,8 @@ const persistConfig = {
 const initialState = {
     products: [{}],
     selected: [{}],
-    counter: 0
+    counter: 0,
+    total: 0
 }
 
 const persistedReducer = persistReducer(persistConfig, reducer)
