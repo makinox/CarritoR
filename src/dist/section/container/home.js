@@ -62,11 +62,14 @@ class App extends React.Component {
 
   total = async () => {
     let total = 0
+    let cantidad = 0
     this.props.selected.map((el) => total += (parseInt(el.cost, 10) * parseInt(el.unity, 10)))
+    this.props.selected.map((el) => cantidad += parseInt(el.unity, 10))
     this.props.dispatch({
       type: 'SET_TOTAL',
       payload: {
-        total
+        total,
+        cantidad
       }
     })
   }
@@ -111,7 +114,14 @@ class App extends React.Component {
     return (
       <Home>
         <ProductList products={this.props.products} click={this.handleClick} />
-        <Carrito selected={this.props.selected} delete={this.handleDelete} total={this.props.total} change={this.handleChange} buy={this.handleBuy} />
+        <Carrito 
+          selected={this.props.selected} 
+          delete={this.handleDelete} 
+          total={this.props.total} 
+          change={this.handleChange} 
+          cantidad={this.props.cantidad}
+          buy={this.handleBuy}
+        />
       </Home>
     )
   }
@@ -122,7 +132,8 @@ function mapStateToProps(state) {
     products: state.products,
     selected: state.selected,
     counter: state.counter,
-    total: state.total
+    total: state.total,
+    cantidad: state.cantidad
   }
 }
 

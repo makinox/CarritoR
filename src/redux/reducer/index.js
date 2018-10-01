@@ -27,6 +27,7 @@ export default function reducef(state, action) {
       return {
         ...state,
         total: action.payload.total,
+        cantidad: action.payload.cantidad
       }
     }
 

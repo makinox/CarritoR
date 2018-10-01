@@ -8,6 +8,7 @@ export default (props) => (
     <div className="carrito">
       <div className="carrito-header">
         <p><strong>Total productos: </strong>{props.selected.length}</p>
+        <p><strong>Cantidad: </strong>{props.cantidad}</p>
         <p><strong>Total: </strong>{props.total}</p>
       </div>
       <div className="carrito-body">
