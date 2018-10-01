@@ -10,7 +10,8 @@ export default class extends React.Component {
   state = {
     products,
     selected: [{ index: 0, product: "Carrito vacio" }],
-    counter: 0
+    counter: 0,
+    total: 0
   }
 
   handleClick = async (e) => {
@@ -26,6 +27,21 @@ export default class extends React.Component {
     } else {
       this.setState({ selected: [...this.state.selected, el] })
     }
+
+    await this.total()
+  }
+
+  handleDelete = async (e) => {
+    const { className } = e.target
+    // console.log(className)
+    this.setState({selected: await this.state.selected.filter((el) => el.index != className)})
+    await this.total()
+  }
+
+  total = async () => {
+    let total = 0
+    this.state.selected.map((el) => total += parseInt(el.cost, 10))
+    this.setState({total})
   }
 
 
@@ -33,7 +49,7 @@ export default class extends React.Component {
     return (
       <Home>
         <ProductList products={this.state.products} click={this.handleClick} />
-        <Carrito selected={this.state.selected} />
+        <Carrito selected={this.state.selected} delete={this.handleDelete} total={this.state.total} />
       </Home>
     )
   }

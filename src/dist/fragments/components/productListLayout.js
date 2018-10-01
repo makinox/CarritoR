@@ -12,7 +12,7 @@ export default (props) => (
           <div className="products-body">
             <h3>{el.product}</h3>
             <p><strong>Unidades: </strong>{el.stock}</p>
-            <p>{el.cost}</p>
+            <p>${el.cost}</p>
           </div>
           <div className="products-footer">
             <a onClick={props.click} className={el.index}>Agregar</a>

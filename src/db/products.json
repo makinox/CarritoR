@@ -4,7 +4,7 @@
     "index": 0,
     "product": "Hendricks",
     "image": "https://picsum.photos/200/300",
-    "cost": "$1,627.14",
+    "cost": "1627",
     "stock": 10
   },
   {
@@ -12,7 +12,7 @@
     "index": 1,
     "product": "Mccarthy",
     "image": "https://picsum.photos/200/300",
-    "cost": "$2,100.95",
+    "cost": "2100",
     "stock": 5
   },
   {
@@ -20,7 +20,7 @@
     "index": 2,
     "product": "Colon",
     "image": "https://picsum.photos/200/300",
-    "cost": "$2,367.58",
+    "cost": "2367",
     "stock": 3
   },
   {
@@ -28,7 +28,7 @@
     "index": 3,
     "product": "Burks",
     "image": "https://picsum.photos/200/300",
-    "cost": "$1,484.64",
+    "cost": "1484",
     "stock": 10
   },
   {
@@ -36,7 +36,7 @@
     "index": 4,
     "product": "Fox",
     "image": "https://picsum.photos/200/300",
-    "cost": "$1,586.75",
+    "cost": "1586",
     "stock": 3
   },
   {
@@ -44,7 +44,7 @@
     "index": 5,
     "product": "Henson",
     "image": "https://picsum.photos/200/300",
-    "cost": "$3,062.72",
+    "cost": "3062",
     "stock": 10
   },
   {
@@ -52,7 +52,7 @@
     "index": 6,
     "product": "Quinn",
     "image": "https://picsum.photos/200/300",
-    "cost": "$2,291.53",
+    "cost": "2291",
     "stock": 3
   }
 ]

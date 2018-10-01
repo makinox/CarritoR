@@ -6,6 +6,7 @@ export default (props) => (
     <div className="carrito">
       <div className="carrito-header">
         <p><strong>Total productos: </strong>{props.selected.length}</p>
+        <p><strong>Total: </strong>{props.total}</p>
       </div>
       <div className="carrito-body">
       {props.selected.map((el, i) => (
@@ -14,22 +15,6 @@ export default (props) => (
           <a ><span role="img" aria-label="Borrar" className={el.index} onClick={props.delete}>❌</span></a>
         </div>
       ))}
-        {/* <div>
-          <p>producto #1</p>
-          <a ><span role="img" aria-label="Borrar">❌</span></a>
-        </div>
-        <div>
-          <p>producto #2</p>
-          <a ><span role="img" aria-label="Borrar">❌</span></a>
-        </div>
-        <div>
-          <p>producto #3</p>
-          <a ><span role="img" aria-label="Borrar">❌</span></a>
-        </div>
-        <div>
-          <p>producto #4</p>
-          <a ><span role="img" aria-label="Borrar">❌</span></a>
-        </div> */}
       </div>
       <div className="carrito-footer">
         <a>Comprar</a>
