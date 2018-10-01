@@ -1,7 +1,9 @@
 import React from 'react'
 
-import ProductList from '../components/productListLayout'
+import ProductList from '../../fragments/components/productListLayout'
+import Carrito from '../../fragments/components/carritoLayout'
 import products from '../../../db/products.json'
+import Home from '../components/homeComponent'
 
 export default class extends React.Component{
 
@@ -15,6 +17,11 @@ export default class extends React.Component{
 
 
   render(){
-    return <ProductList products={this.state.products} />
+    return (
+      <Home>
+        <ProductList products={this.state.products} />
+        <Carrito />
+      </Home>
+    )
   }
 }

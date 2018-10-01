@@ -1,65 +1,58 @@
 [
   {
-    "_id": "5bb03aa932fdaa166fb75106",
+    "_id": "5bb151a1f8933f6a8d75efb7",
     "index": 0,
-    "product": "Castillo",
-    "stock": 5,
-    "company": "EGYPTO"
+    "product": "Hendricks",
+    "image": "https://picsum.photos/200/300",
+    "cost": "$1,627.14",
+    "stock": 10
   },
   {
-    "_id": "5bb03aa989f309a88945f7f8",
+    "_id": "5bb151a1bfd5cfd3c44e2311",
     "index": 1,
-    "product": "Lucas",
-    "stock": 3,
-    "company": "PROSELY"
+    "product": "Mccarthy",
+    "image": "https://picsum.photos/200/300",
+    "cost": "$2,100.95",
+    "stock": 5
   },
   {
-    "_id": "5bb03aa9495f4eb6906a14c3",
+    "_id": "5bb151a15435892e740d3c4d",
     "index": 2,
-    "product": "Cross",
-    "stock": 5,
-    "company": "GEOFARM"
+    "product": "Colon",
+    "image": "https://picsum.photos/200/300",
+    "cost": "$2,367.58",
+    "stock": 3
   },
   {
-    "_id": "5bb03aa9bc63f093b70aa630",
+    "_id": "5bb151a146ada670b298fc3a",
     "index": 3,
-    "product": "Hart",
-    "stock": 2,
-    "company": "OTHERSIDE"
+    "product": "Burks",
+    "image": "https://picsum.photos/200/300",
+    "cost": "$1,484.64",
+    "stock": 10
   },
   {
-    "_id": "5bb03aa99653fe31db9430cd",
+    "_id": "5bb151a1ebfb994ebfdfd98b",
     "index": 4,
-    "product": "Goodman",
-    "stock": 5,
-    "company": "ARTIQ"
+    "product": "Fox",
+    "image": "https://picsum.photos/200/300",
+    "cost": "$1,586.75",
+    "stock": 3
   },
   {
-    "_id": "5bb03aa9abd88ec25f05398b",
+    "_id": "5bb151a16e1fcbed66441ec6",
     "index": 5,
-    "product": "Saunders",
-    "stock": 7,
-    "company": "TUBALUM"
+    "product": "Henson",
+    "image": "https://picsum.photos/200/300",
+    "cost": "$3,062.72",
+    "stock": 10
   },
   {
-    "_id": "5bb03aa9ead746c61b6183c3",
+    "_id": "5bb151a1fe02c3c46700175b",
     "index": 6,
-    "product": "Horton",
-    "stock": 6,
-    "company": "CIPROMOX"
-  },
-  {
-    "_id": "5bb03aa90cbe0d8e8e089d28",
-    "index": 7,
-    "product": "Lamb",
-    "stock": 3,
-    "company": "EXOSPEED"
-  },
-  {
-    "_id": "5bb03aa991e4be9ea69a72d8",
-    "index": 8,
-    "product": "Rivas",
-    "stock": 6,
-    "company": "QUONK"
+    "product": "Quinn",
+    "image": "https://picsum.photos/200/300",
+    "cost": "$2,291.53",
+    "stock": 3
   }
 ]
