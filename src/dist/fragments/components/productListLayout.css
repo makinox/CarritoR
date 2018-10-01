@@ -1,6 +1,6 @@
 .products {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   margin: 20px 5px;
   border-radius: 10px;
   box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, .1);
@@ -23,4 +23,19 @@
 
 .products-body p:first-of-type {
   margin: 4px 0;
+}
+
+.products-footer {
+  justify-self: center;
+  align-self: center;
+}
+
+.products-footer a {
+  background-color: #022ED8;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .2);
 }

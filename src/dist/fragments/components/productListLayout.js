@@ -14,6 +14,9 @@ export default (props) => (
             <p><strong>Unidades: </strong>{el.stock}</p>
             <p>{el.cost}</p>
           </div>
+          <div className="products-footer">
+            <a onClick={props.click} className={el.index}>Agregar</a>
+          </div>
         </div>
       )
     })}
