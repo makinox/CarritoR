@@ -47,10 +47,10 @@ class App extends React.Component {
 
   handleDelete = async (e) => {
     const { className } = e.target
-    // eslint-disable-next-line
     this.props.dispatch({
       type: 'SET_SELECTED',
       payload: {
+        // eslint-disable-next-line
         selected: await this.props.selected.filter((el) => el.index != className),
         counter: 1
       }
@@ -59,7 +59,7 @@ class App extends React.Component {
     await this.total()
   }
 
-  total = async (changer) => {
+  total = async () => {
     let total = 0
     this.props.selected.map((el) => total += (parseInt(el.cost, 10)))
     this.props.dispatch({
@@ -70,17 +70,31 @@ class App extends React.Component {
     })
   }
 
-  handleChange = async (e) => {
-    const {value, className} = e.target
-    console.log(className)
-    console.log(value)
+  // handleChange = async (e) => {
+  //   const {value, className} = e.target
+  //   console.log(className)
+  //   console.log(value)
+  // }
+
+  handleBuy = () => {
+    if (window.confirm('Está seguro de comprar?')){
+      this.props.dispatch({
+        type: 'SET_SELECTED',
+        payload: {
+        // eslint-disable-next-line
+        selected: [{}],
+        counter: 0
+      }
+      })
+      this.total()
+    }
   }
 
   render() {
     return (
       <Home>
         <ProductList products={this.props.products} click={this.handleClick} />
-        <Carrito selected={this.props.selected} delete={this.handleDelete} total={this.props.total} change={this.handleChange} />
+        <Carrito selected={this.props.selected} delete={this.handleDelete} total={this.props.total} change={this.handleChange} buy={this.handleBuy} />
       </Home>
     )
   }
