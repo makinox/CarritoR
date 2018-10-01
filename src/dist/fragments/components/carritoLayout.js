@@ -13,8 +13,8 @@ export default (props) => (
       <div className="carrito-body">
         {props.selected.map((el, i) => (
           <div key={i}>
-            <p>{el.product} X 1</p>
-
+            <p>{el.product}</p>
+            <input type="number" className={el.index} onChange={props.change} defaultValue={el.unity} max={el.stock} min={0}/>
             <a onClick={props.delete} ><span role="img" aria-label="Borrar" className={el.index} >❌</span></a>
           </div>
         ))}

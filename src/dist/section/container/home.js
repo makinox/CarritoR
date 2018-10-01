@@ -21,6 +21,7 @@ class App extends React.Component {
     const { className } = e.target
     // eslint-disable-next-line
     let el = await this.props.products.filter((el) => el.index == className)[0]
+    el.unity = 1
     const duplicity = this.props.selected.some((aux) => el.index === aux.index)
     if (this.props.counter === 0) {
       this.props.dispatch({
@@ -61,7 +62,7 @@ class App extends React.Component {
 
   total = async () => {
     let total = 0
-    this.props.selected.map((el) => total += (parseInt(el.cost, 10)))
+    this.props.selected.map((el) => total += (parseInt(el.cost, 10) * parseInt(el.unity, 10)))
     this.props.dispatch({
       type: 'SET_TOTAL',
       payload: {
@@ -70,11 +71,27 @@ class App extends React.Component {
     })
   }
 
-  // handleChange = async (e) => {
-  //   const {value, className} = e.target
-  //   console.log(className)
-  //   console.log(value)
-  // }
+  handleChange = async (e) => {
+    const {value, className} = e.target
+    // eslint-disable-next-line
+    const index = this.props.selected.findIndex((el => el.index == className))
+    const update = {...this.props.selected[index], unity: value }
+
+    const selected = [
+      ...this.props.selected.slice(0, index),
+      update,
+      ...this.props.selected.slice(index + 1)
+    ]
+
+    await this.props.dispatch({
+      type: 'SET_SELECTED',
+      payload: {
+        selected,
+        counter: 1
+      }
+    })
+    await this.total()
+  }
 
   handleBuy = async () => {
     if (window.confirm('Está seguro de comprar?')) {
