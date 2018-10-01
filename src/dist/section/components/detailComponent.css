@@ -1,0 +1,29 @@
+.detail-component {
+  display: grid;
+  padding-top: 20px;
+  grid-template-columns: 18vw;
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.detail-component-items {
+  padding: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3);
+}
+
+.detail-component-footer {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 10px; */
+}
+
+.detail-component-footer a {
+  background-color: #022ED8;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  border-radius: 5px;
+  padding: 6px;
+  box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, .2);
+}
