@@ -16,8 +16,8 @@ export default (props) => (
       <p><strong>Total: </strong>{props.total}</p>
     </div>
     <div className="detail-component-footer">
-      <a>Comprar</a>
-      <a>Cancelar</a>
+      <a onClick={props.buy}>Comprar</a>
+      <a onClick={props.buy}>Cancelar</a>
     </div>
   </div>
 )
