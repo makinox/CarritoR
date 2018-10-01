@@ -1,34 +1,34 @@
 import React from 'react'
-import Login from './../components/loginLayout'
+import {connect} from 'react-redux'
 
+import Login from './../components/loginLayout'
 import db from '../../../db/people.json'
 
-export default class extends React.Component {
+class App extends React.Component {
 
   state = {
     db
   }
 
-  // componentDidMount(){
-  //   // console.log(db)
-  // }
-
   handleSubmit = (e) => {
     e.preventDefault()
-    // console.log(e.target.user.value)
-    // console.log(e.target.password.value)
 
-    const log = db.map((el) => {
+    db.map( async (el) => {
       if (el.username === e.target.user.value && el.password === e.target.password.value){
-        return true
+        window.location.href = '/home'
+        await this.props.dispatch({
+          type: 'login',
+          payload: {
+            log: true
+          }
+        })
       }
-      return false
     })
-
-    if (log) window.location.href = '/home'
   }
 
   render(){
     return <Login submit={this.handleSubmit}/>
   }
 }
+
+export default connect()(App)

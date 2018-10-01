@@ -4,8 +4,7 @@ export default function reducef(state, action) {
     case 'login': {
       return {
         ...state,
-        logged: action.payload.logged,
-        token: action.payload.token
+        log: action.payload.log
       }
     }
 

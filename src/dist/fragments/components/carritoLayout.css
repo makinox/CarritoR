@@ -49,6 +49,7 @@
 
 .carrito-footer a {
   background-color: #022ED8;
+  text-decoration: none;
   color: #fff;
   cursor: pointer;
   margin: 20px;

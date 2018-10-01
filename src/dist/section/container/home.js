@@ -1,5 +1,5 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
 import ProductList from '../../fragments/components/productListLayout'
 import Carrito from '../../fragments/components/carritoLayout'
@@ -8,7 +8,7 @@ import Home from '../components/homeComponent'
 
 class App extends React.Component {
 
-  componentDidMount(){
+  componentDidMount() {
     this.props.dispatch({
       type: 'SET_PRODUCTS',
       payload: {
@@ -30,7 +30,7 @@ class App extends React.Component {
           counter: 1
         }
       })
-    } else if (duplicity){
+    } else if (duplicity) {
       return 0
     } else {
       this.props.dispatch({
@@ -76,17 +76,17 @@ class App extends React.Component {
   //   console.log(value)
   // }
 
-  handleBuy = () => {
-    if (window.confirm('Está seguro de comprar?')){
-      this.props.dispatch({
+  handleBuy = async () => {
+    if (window.confirm('Está seguro de comprar?')) {
+      await this.props.dispatch({
         type: 'SET_SELECTED',
         payload: {
-        // eslint-disable-next-line
-        selected: [{}],
-        counter: 0
-      }
+          // eslint-disable-next-line
+          selected: [{}],
+          counter: 0
+        }
       })
-      this.total()
+      await this.total()
     }
   }
 
@@ -100,8 +100,8 @@ class App extends React.Component {
   }
 }
 
-function mapStateToProps(state){
-  return{
+function mapStateToProps(state) {
+  return {
     products: state.products,
     selected: state.selected,
     counter: state.counter,
