@@ -12,9 +12,9 @@ export default (props) => (
 
             {props.log ? (
                 <Switch>
-                    <Route component={Home} />
                     <Route exact path="/home" component={Home} />
                     <Route exact path="/detail" component={Detail} />
+                    <Route component={Home} />
                 </Switch>
             ) : (
                     <Switch>

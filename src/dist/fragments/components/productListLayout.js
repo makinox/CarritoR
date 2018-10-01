@@ -2,7 +2,7 @@ import React from 'react'
 import './productListLayout.css'
 
 export default (props) => (
-  <section>
+  <section className="products-container">
     {props.products.map((el, i) => {
       return(
         <div className="products" key={i}>
