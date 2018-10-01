@@ -12,7 +12,15 @@ export default (props) => (
       {props.selected.map((el, i) => (
         <div key={i}>
           <p>{el.product}</p>
-          <a ><span role="img" aria-label="Borrar" className={el.index} onClick={props.delete}>❌</span></a>
+
+          <input className={el.index}
+            type="number"
+            defaultValue={1}
+            onChange={props.change}
+            max={1}
+          />
+
+          <a ><span role="img" aria-label="Borrar" className={el.index} onClick={props.delete} >❌</span></a>
         </div>
       ))}
       </div>
